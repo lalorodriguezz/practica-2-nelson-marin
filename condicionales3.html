@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionales  3</title>
+</head>
+<body>
+    <p id ="salida"></p>
+    <script>
+        // generar un numero aleatorio
+        // y mostrarlo en el navegador 
+        // validar si el numero es mayor de 3, mostrar el mensaje en el parrafo
+        // con id salida
+        // eres un ganador, de lo contrario, mostrar el mensaje de perdedor
+        let numero = Math.floor(Math.random() * 10) + 1;
+        if (numero > 3) {
+            document.getElementById("salida").innerHTML = "eres un ganador con el numero: " + numero;
+        } else {
+            document.getElementById("salida").innerHTML = "eres un perdedor con el numero: " + numero;
+        } 
+
+    </script>
+</body>
+</html>
