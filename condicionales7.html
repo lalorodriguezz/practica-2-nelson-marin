@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionales 7</title>
+</head>
+<body>
+ <script>
+    // si un alumno es de fp y tiene mas de 18 años, si tiene acceso al portal web 
+    // mostrar bienvenido, por pantalla
+    // si un alumno es de fp y no tiene mas de 18 años, si tiene acceso al portal web
+    // mostrar acceso denegado, por pantalla
+
+    let edad, acceso;
+    edad = prompt("edad?", "0");
+    acceso = prompt("acceso?", "0");
+    if ((edad>18) && (acceso=="fp"))
+    {
+        document.write("bienvenido");
+    }
+    else if ((edad<18) && (acceso=="fp"))
+    {
+        document.write("acceso denegado");
+    }
+    else
+    {
+        document.write("acceso denegado");
+    }
+
+
+ </script>   
+</body>
+</html>
