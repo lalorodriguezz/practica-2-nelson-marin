@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionales 10</title>
+</head>
+<body>
+    <script>
+        // programa con introduccion de edad por parte del usuario
+        // no permitir edades menores que 1 y mayores que 100
+        // si la edad es mayor que 18, tiene acceso
+
+        alert("introduce tu edad");
+        let edad = prompt("edad?", "0");
+        if ((edad>=1) && (edad<=100))
+        {
+            if (edad>18)
+            {
+                alert("tiene acceso");
+            }
+            else
+            {
+                alert("no tiene acceso");
+            }
+        }
+        else
+        {
+            alert("edad no permitida");
+        }
+
+
+    </script>
+</body>
+</html>
