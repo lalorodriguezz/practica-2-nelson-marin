@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionales 6</title>
+</head>
+<body>
+    <script>
+        // programa para una tienda de coches
+        // si el coche a la venta es un ford fiesta, el descuento es de 5%
+        // si el coche a la venta es un ford focus, el descuento es de 10%
+        // el usuario introduce el modelo del coche a la venta
+        // y el programa saca el descuento correspondiente por pantalla
+
+        let marca, modelo, descuento = 0;
+        marca = prompt("marca?", "0");
+        modelo = prompt("modelo?", "0");
+        if ((marca=="ford") && (modelo=="fiesta"))
+        {
+            descuento = 5;
+        }
+        else if ((marca=="ford") && (modelo=="focus"))
+        {
+            descuento = 10;
+        }
+        
+        document.write(`<h3>su descuento es de ${descuento}%</h3>`);
+
+    </script>
+</body>
+</html>
