@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionales ejercicio 14</title>
+</head>
+<body>
+    <script>
+        // programa en el que el usuario introduce el numero del mes (1-12)
+        // y el codigon responde ese mes tiene 30 o 31 dias
+
+        let mes = prompt("mes?", "0");
+        if ((mes==1) || (mes==3) || (mes==5) || (mes==7) || (mes==8) || (mes==10) || (mes==12))
+        {
+            alert("tiene 31 dias");
+        }
+        else if ((mes==4) || (mes==6) || (mes==9) || (mes==11))
+        {
+            alert("tiene 30 dias");
+        }
+        else if (mes==2)
+        {
+            alert("tiene 28 dias");
+        }
+        else
+        {
+            alert("mes no permitido");
+        }
+    </script>
+</body>
+</html>
