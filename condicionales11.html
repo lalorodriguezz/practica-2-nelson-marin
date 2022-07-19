@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionales 11</title>
+</head>
+<body>
+    <script>
+        // realizar algoritmo estructurado para una ajencia de viajes
+        // si el usuario introduce como origen la ciudad de Palma y como destino Barcelona
+        // el descuento se estbalce en 5%
+        // si el el destino es Madrid el descuento es de 10%
+        // si el destino es Valencia el descuento es de 15%
+
+        let origen, destino, descuento = 0;
+        origen = prompt("origen?", "0");
+        destino = prompt("destino?", "0");
+        if ((origen=="Palma") && (destino=="Barcelona"))
+        {
+            descuento = 5;
+        }
+        else if ((destino=="Madrid"))
+        {
+            descuento = 10;
+        }
+        else if ((destino=="Valencia"))
+        {
+            descuento = 15;
+        }
+        else
+        {
+            alert("destino no permitido");
+        }
+        document.write(`<h3>su descuento es de ${descuento}%</h3>`);
+
+    </script>
+</body>
+</html>
