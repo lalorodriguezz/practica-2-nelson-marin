@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicionales  2</title>
+</head>
+<body>
+    <script>
+        // programa que lee tres notas de un alumno y muestra el promedio de ellas
+        // indicar si esta aprobado o suspendido
+        // la nota minima para aprobar es 5
+        let nota1, nota2, nota3, promedio;
+        nota1 = prompt("introduce la nota 1");
+        nota2 = prompt("introduce la nota 2");
+        nota3 = prompt("introduce la nota 3");
+        promedio = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3)) / 3;
+        if (promedio >= 5) {
+            document.write("el alumno esta aprobado con un promedio de: " + promedio);
+        } else {
+            document.write("el alumno esta suspendido con un promedio de: " + promedio);
+        }
+
+    </script>
+</body>
+</html>
